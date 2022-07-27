@@ -72,14 +72,100 @@
 					<div class="header__block-title">
 						<h1 class="header__title">Повний спектр послуг з ремонту авто у Києві та області</h1>
 						<div class="header__btn">
-							<button>Залишити заявку*</button>
+							<button data-modal-btn="my_modal2">Залишити заявку*</button>
 						</div>
 						<h3 class="header__sub-title">*отримаєте безкоштовну діагностику </h3>
 					</div>
 					<div class="header__socials">
 							<img src="./images/content/whatsapp.svg" alt="">
 					</div>
+					<section>
+						<div class="modal" data-modal-window="my_modal2">
+						  	<div class="modal-window">
+								<div class="modal-window-container">
+									<div class="close-modal-window-black"></div>
+									<h4 class="subtitle-modal">Чудовий вибір!<img src="./images/content/smile_with_glasses.svg" alt="smile" class="smile-modal"></h4>
+									<form action="#" class="modal-form">
+										<div class="inputs-container">
+											<div>
+												<div class="modal-input">
+													<input name="name" placeholder="Ваше ім’я" type="text" required="" minlength="2">
+												</div>
+												<div class="modal-input">
+													<input name="phone" placeholder="Ваш телефон" type="tel" required=""  pattern="^\+\d{2} \(\d{3}\) \d{3} \d{2} \d{2}$">
+												</div>
+											</div>
+											<div class="modal-text">
+												Це потрібно тільки для зворотного дзвінка. Обіцяємо - ніякої реклами
+											</div>
+										</div>
+										<div class="radio-container">
+											<div class="radio">
+												<div class="request__radio radio-width">
+													<input checked type="radio" name="bonus" id="consultation">
+													<label for="consultation">
+														<div>
+															<div class="request__circle"></div>
+															<div class="icon-consultation icons"></div>
+														</div>
+														<p class="radio-text">Безкоштовна консультація</p>
+													</label>
+												</div>
+												<div class="request__radio radio-width">
+													<input type="radio" name="bonus" id="diagnostics">
+													<label for="diagnostics">
+														<div>
+															<div class="request__circle"></div>
+															<div class="icon-diagnostics icons"></div>
+														</div>
+														<p>Безкоштовна діагностика</p>
+													</label>
+												</div>
+											</div>
+											<div class="radio">
+												<div class="request__radio radio-width">
+													<input type="radio" name="bonus" id="assessment">
+													<label for="assessment">
+														<div>
+															<div class="request__circle"></div>
+															<div class="icon-assessment icons"></div>
+														</div>
+														<p>Оцінка авто за фото</p>
+													</label>
+												</div>
+												<div class="request__radio radio-width">
+													<input type="radio" name="bonus" id="selection">
+													<label for="selection">
+														<div>
+															<div class="request__circle"></div>
+															<div class="icon-selection icons"></div>
+														</div>
+														<p>Індивідуальний підбір авто</p>
+													</label>
+												</div>
+												<div class="request__radio radio-width">
+													<input type="radio" name="bonus" id="driving">
+													<label for="driving">
+														<div>
+															<div class="request__circle"></div>
+															<div class="icon-driving icons"></div>
+														</div>
+														<p>Пригон авто із США</p>
+													</label>
+												</div>
+											</div>
 
+										</div>
+										<div class="modal-btn">
+											<button>Залишити заявку*</button>
+										</div>
+										<p class="modal-bottom-text">*Оберіть свій бонус:</p>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
 				</div>
 
 			</header>
@@ -1180,39 +1266,13 @@
 									</div>
 								</div>
 								<div class="constructor__btn">
-									<button data-modal-btn="modal-thanks">Проконсультуватись</button>
+									<button>Проконсультуватись</button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section>
-					<div class="modal-container" data-modal-window="modal-thanks">
-						<div class="thanks-window">
-							<div class="close-modal-window"></div>
-							<div class="thanks-window-text">
-								<p>
-								 <span class="bold">Святозар,</span>  як тільки менеджер опрацює Вашу заявку, ми Вам одразу <span class="bold">зателефонуємо</span> для уточнення деталей за Вашим запитом
-								</p>
-								<div class="thanks-container">
-									<img class="fire-img" src="./images/content/fire.svg" alt="">
-									<p class="thanks"><span class="bold">Дякуємо,</span> що обрали <span class="bold">ADCars</span></p>
-									<img class="fire-img" src="./images/content/constructor_fire.svg" alt="">
-								</div>
-							</div>
-							<div class="thanks-icons">
-								<img class="thanks-img" src="./images/content/golden_headphones.svg" alt="">
-								<img class="thanks-img" src="./images/content/golden_car.svg" alt="">
-								<img class="thanks-img" src="./images/content/golden_camera.svg" alt="">
-								<img class="thanks-img" src="./images/content/golden_car_golden_hands.svg" alt="">
-								<img class="thanks-img-last" src="./images/content/golden_car_in_garage.svg" alt="">
-							</div>
-							<a class="back-to-main-btn" href="#" onclick="location.reload(); return false;">
-								Повернутися до головної
-							</a>
-						</div>
-					</div>
-				</section>
+
 				<section class="qr-links">
 					<div class="container">
 						<h3 class="qr-links__title sub-title">
